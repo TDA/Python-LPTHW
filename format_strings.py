@@ -23,6 +23,7 @@ end11 = "e"
 end12 = "r"
 
 # watch that comma at the end.  try removing it to see what happens
+# comma at the end of a print line means no newline :O, never knew that :D
 print end1 + end2 + end3 + end4 + end5 + end6,
 print end7 + end8 + end9 + end10 + end11 + end12
 
@@ -61,3 +62,7 @@ Multiline printing I believe, dont multi-comments also use the same syntax?
 Looks like they do.
 In 4 lines if we want, or 5, or 6.
 """
+
+while True:
+    for i in ["/","-","|","\\","|"]:
+        print "%s\r" % i
