@@ -38,3 +38,26 @@ print formatter % (
     "But it didn't sing.",
     "So I said goodnight."
 )
+
+
+# Here's some new strange stuff, remember type it exactly.
+
+days = "Mon Tue Wed Thu Fri Sat Sun"
+months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+
+print "Here are the days: ", days
+print "Here are the months: ", months
+
+print """
+Multiline printing I believe, dont multi-comments also use the same syntax?
+There's something going on here.
+With the three double-quotes.
+We'll be able to type as much as we like.
+Even 4 lines if we want, or 5, or 6.
+"""
+
+"""
+Multiline printing I believe, dont multi-comments also use the same syntax?
+Looks like they do.
+In 4 lines if we want, or 5, or 6.
+"""
