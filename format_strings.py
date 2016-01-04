@@ -63,6 +63,6 @@ Looks like they do.
 In 4 lines if we want, or 5, or 6.
 """
 
-while True:
-    for i in ["/","-","|","\\","|"]:
-        print "%s\r" % i
+# while True:
+#     for i in ["/","-","|","\\","|"]:
+#         print "%s\r" % i
