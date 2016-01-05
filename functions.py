@@ -9,7 +9,8 @@ def print_two_2(args):
     arg1, arg2 = args
     print "arg1: %r, arg2: %r" % (arg1, arg2)
 
-# *args is the same as supplying a list to the function
+# *args is the same as supplying a list to the function (like a pointer :O)
+
 # ok, that *args is actually pointless, we can just do this
 def print_two_again(arg1, arg2):
     print "arg1: %r, arg2: %r" % (arg1, arg2)
