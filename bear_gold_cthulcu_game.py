@@ -6,6 +6,8 @@ def gold_room():
     print "This room is full of gold.  How much do you take?"
 
     choice = raw_input("> ")
+    how_much = 0
+    # 41 is the max for winning :D
     if "0" in choice or "1" in choice:
         how_much = int(choice)
     else:
@@ -13,6 +15,7 @@ def gold_room():
 
     if how_much < 50:
         print "Nice, you're not greedy, you win!"
+        # Might as well use dead("") here too :D
         exit(0)
     else:
         dead("You greedy bastard!")
