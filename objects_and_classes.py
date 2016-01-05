@@ -4,75 +4,77 @@ __author__ = 'saipc'
 class Animal(object):
     pass
 
-## ??
+
+## Dog is-an animal
 class Dog(Animal):
-
     def __init__(self, name):
-        ## ??
+        ## Dog has-a name
         self.name = name
 
-## ??
+
+## Cat is-an Animal
 class Cat(Animal):
-
     def __init__(self, name):
-        ## ??
+        ## Cat has-a name
         self.name = name
 
-## ??
-class Person(object):
 
+## Person is-an Object
+class Person(object):
     def __init__(self, name):
-        ## ??
+        ## Person has-a name
         self.name = name
 
         ## Person has-a pet of some kind
         self.pet = None
 
-## ??
-class Employee(Person):
 
+## Employee is-a Person
+class Employee(Person):
     def __init__(self, name, salary):
-        ## ?? hmm what is this strange magic?
+        ## Constructor of super class, ie Person
         super(Employee, self).__init__(name)
-        ## ??
+        ## Employee has-a salary
         self.salary = salary
 
-## ??
+
+## Fish is-an Object
 class Fish(object):
     pass
 
-## ??
+
+## Salmon is-a Fish
 class Salmon(Fish):
     pass
 
-## ??
+
+## Halibut is-a Fish
 class Halibut(Fish):
     pass
-
 
 ## rover is-a Dog
 rover = Dog("Rover")
 
-## ??
+## Satan is-a Cat
 satan = Cat("Satan")
 
-## ??
+## mary is-a Person
 mary = Person("Mary")
 
-## ??
+## Mary has-a pet that is satan
 mary.pet = satan
 
-## ??
+## Frank is-an Employee with name=Frank, Salary=120000
 frank = Employee("Frank", 120000)
 
-## ??
+## Frank has-a pet that is rover
 frank.pet = rover
 
-## ??
+## flipper is-a Fish
 flipper = Fish()
 
-## ??
+## crouse is-a Salmon
 crouse = Salmon()
 
-## ??
+## harry is-a Halibut
 harry = Halibut()
