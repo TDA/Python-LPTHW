@@ -20,3 +20,8 @@ print sorted_words
 
 print_last_word(sorted_words)
 print sorted_words
+
+# same as the composite of the previous
+# functions, but the string is unmodified
+print_first_and_last(string)
+print_first_and_last_sorted(string)
